@@ -77,7 +77,7 @@ export default function Home() {
             {
               title: "開発",
               image: homeGoalDevelopmentImage,
-              description: "吾輩は猫である",
+              description: "開発を行います",
             },
           ].map(({ title, image, description }) => (
             <div key={title}>
