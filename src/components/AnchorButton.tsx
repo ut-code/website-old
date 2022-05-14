@@ -14,7 +14,7 @@ export default function AnchorButton(
     <Link href={href}>
       <a
         className={clsx(
-          "inline-block rounded-md bg-primary-main hover:brightness-110 text-white font-bold",
+          "inline-block rounded-md bg-primary-main hover:brightness-110 hover:transition hover:duration-150 transition duration-150 text-white font-bold",
           {
             small: "px-8 py-2 text-base",
             medium: "px-8 py-2 text-base",
