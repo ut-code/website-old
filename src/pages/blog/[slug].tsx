@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { marked } from "marked";
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
+  frontmatter: { title, date, coverImage },
   slug,
   content,
 }) {
@@ -12,7 +12,7 @@ export default function PostPage({
     <>
       <h1>{title}</h1>
       <div>{date}</div>
-      <img src={cover_image} alt="" className="" />
+      <img src={coverImage} alt="" className="" />
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
       <div>{slug}</div>
     </>
@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".md"),
+    path.join("posts", `${slug}.md`),
     "utf-8"
   );
 
