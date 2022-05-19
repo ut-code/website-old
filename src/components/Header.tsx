@@ -1,7 +1,8 @@
+import clsx from "clsx";
 import AnchorButton from "./AnchorButton";
 import Logo from "./Logo";
 
-export default function Header() {
+export default function Header({ textColor = "text-white" }) {
   return (
     <header className="flex mt-12">
       <a href="/">
@@ -10,11 +11,11 @@ export default function Header() {
       </a>
       <nav className="ml-auto">
         <ul className="list-none flex items-center">
-          <li className="mx-8 text-white text-lg">
+          <li className={clsx("mx-8 text-lg", textColor)}>
             <a href="/">ブログ</a>
           </li>
-          <li className="mx-8 text-white text-lg">
-            <a href="/">活動理念</a>
+          <li className={clsx("mx-8 text-lg", textColor)}>
+            <a href="/our-mission">活動理念</a>
           </li>
           <li className="mx-8">
             <AnchorButton variant="medium" href="/">
