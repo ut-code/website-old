@@ -7,5 +7,6 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     // TypeScript と相性が悪い
     "react/require-default-props": "off",
+    "react/no-danger": "off",
   },
 };
