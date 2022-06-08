@@ -8,10 +8,10 @@ import homeGoalCommunityImage from "../../resources/home-goal-community.svg";
 import homeGoalDevelopmentImage from "../../resources/home-goal-development.svg";
 import AnchorButton from "../components/AnchorButton";
 import ContentContainer from "../components/ContentContainer";
-import Header from "../components/Header";
 import Logo from "../components/Logo";
 import ExplanationBox, { List } from "../components/ExplanationBox";
-import Post from "../components/Post";
+import Post, { PostType, PostsType } from "../components/Post";
+import TopPageHeader from "../components/TopPageHeader";
 
 export function Keyvisual() {
   return (
@@ -36,7 +36,7 @@ export function Keyvisual() {
         </div>
       </div>
       <ContentContainer className="flex flex-col relative h-full">
-        <Header />
+        <TopPageHeader />
         <div className="flex-grow md:flex items-center mt-8 md:mt-0">
           <div className="flex-grow">
             <div className="text-3xl sm:text-5xl sm:leading-tight md:text-3xl md:leading-normal lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight font-extrabold">
@@ -205,14 +205,14 @@ export function Schedule() {
   );
 }
 
-export function ActivityHistory({ posts }) {
+export function ActivityHistory({ posts }: { posts: PostsType }) {
   return (
     <div className="bg-gray-100 pt-28 px-28 ">
       <div className="text-5xl font-extrabold tracking-widest text-center">
         活動履歴
       </div>
-      {posts.map((post) => (
-        <Post key={post.id} post={post} />
+      {posts.map((post: PostType) => (
+        <Post key={post.slug} post={post} />
       ))}
       <div className="flex mt-20">
         <div className="bg-gray-300 w-2/3 h-44" />
@@ -267,7 +267,7 @@ export function Footer() {
   );
 }
 
-export default function Home({ posts }) {
+export default function Home({ posts }: { posts: PostsType }) {
   return (
     <>
       <Keyvisual />

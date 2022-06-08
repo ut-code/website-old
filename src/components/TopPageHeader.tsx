@@ -1,7 +1,7 @@
 import AnchorButton from "./AnchorButton";
 import Logo from "./Logo";
 
-export default function Header() {
+export default function TopPageHeader() {
   return (
     <header className="flex mt-12">
       <a href="/">
@@ -11,10 +11,13 @@ export default function Header() {
       <nav className="ml-auto">
         <ul className="list-none flex items-center">
           <li className="mx-8 text-white text-lg">
-            <a href="/">ブログ</a>
+            <a href="/">お知らせ</a>
           </li>
           <li className="mx-8 text-white text-lg">
-            <a href="/">活動理念</a>
+            <a href="/blog">ブログ</a>
+          </li>
+          <li className="mx-8 text-white text-lg">
+            <a href="/our-mission">活動理念</a>
           </li>
           <li className="mx-8">
             <AnchorButton variant="medium" href="/">

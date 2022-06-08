@@ -1,11 +1,11 @@
 import ContentContainer from "../components/ContentContainer";
-import Header from "../components/Header";
+import NormalHeader from "../components/NormalHeader";
 
 export default function OurMission() {
   return (
     <>
       <ContentContainer>
-        <Header />
+        <NormalHeader />
       </ContentContainer>
       <ContentContainer>
         <div className="my-28 px-24">
