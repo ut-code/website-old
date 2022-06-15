@@ -5,6 +5,7 @@ import { marked } from "marked";
 import NormalHeader from "../../components/NormalHeader";
 import ContentContainer from "../../components/ContentContainer";
 import TinyPost from "../../components/TinyPost";
+import Footer from "../../components/Footer";
 
 type TinyPostType = {
   slug2: string;
@@ -51,22 +52,26 @@ export default function PostPage({
       <ContentContainer>
         <NormalHeader />
       </ContentContainer>
-      <ContentContainer className="flex pt-20">
-        <div>
-          <article className="mr-20">
-            <h1 className="text-5xl">{title}</h1>
+      <ContentContainer className="flex pt-20 mb-20">
+        <div className="w-3/4">
+          <article className="mr-10">
             <div>{date}</div>
-            <img src={coverImage} alt="" className="" />
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+            <h1 className="text-5xl">{title}</h1>
+            <img src={coverImage} alt="" className="w-full" />
+            <div
+              className="text-xl mt-10"
+              dangerouslySetInnerHTML={{ __html: marked(content) }}
+            />
           </article>
         </div>
-        <div>
-          <div className="w-2/5 text-2xl tracking-widest">最近の記事</div>
+        <div className="w-1/4">
+          <div className=" text-2xl tracking-widest">最近の記事</div>
           {posts.map((post: TinyPostType) => (
             <TinyPost key={post.slug2} post={post} />
           ))}
         </div>
       </ContentContainer>
+      <Footer />
     </>
   );
 }
