@@ -18,7 +18,6 @@ type TinyPostType = {
 };
 
 type TinyPostPage = {
-  slug: string;
   frontmatter: {
     title: string;
     date: string;
@@ -43,7 +42,6 @@ type TinyPostsType = [
 ];
 
 export default function PostPage({
-  slug,
   frontmatter: { title, date, coverImage },
   content,
   posts,
@@ -65,7 +63,7 @@ export default function PostPage({
         <div>
           <div className="w-2/5 text-2xl tracking-widest">最近の記事</div>
           {posts.map((post: TinyPostType) => (
-            <TinyPost key={slug} post={post} />
+            <TinyPost key={post.slug2} post={post} />
           ))}
         </div>
       </ContentContainer>
