@@ -6,6 +6,7 @@ import NormalHeader from "../components/NormalHeader";
 import blogImage from "../../public/images/posts/blog.jpg";
 import ContentContainer from "../components/ContentContainer";
 import Post, { PostsType, PostType } from "../components/Post";
+import Footer from "../components/Footer";
 
 export default function Blog({ posts }: { posts: PostsType }) {
   return (
@@ -37,11 +38,12 @@ export default function Blog({ posts }: { posts: PostsType }) {
           </div>
         </div>
       </ContentContainer>
-      <ContentContainer>
+      <ContentContainer className="mb-20">
         {posts.map((post: PostType) => (
           <Post key={post.slug} post={post} />
         ))}
       </ContentContainer>
+      <Footer />
     </>
   );
 }
