@@ -1,13 +1,13 @@
 import ContentContainer from "../components/ContentContainer";
+import NormalHeader from "../components/NormalHeader";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 
 export default function Ourmission() {
   const pStyle = "leading-loose my-3";
   return (
     <>
       <ContentContainer>
-        <Header textColor="text-black" />
+        <NormalHeader />
       </ContentContainer>
       <ContentContainer>
         <div className="mt-8 mb-16 px-16 sm:px-24 2xl:px-40">

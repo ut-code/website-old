@@ -1,4 +1,27 @@
-export default function Post({ post }) {
+export type PostsType = [
+  {
+    slug: string;
+    frontmatter: {
+      title: string;
+      date: string;
+      coverImage: string;
+      excerpt: string;
+    };
+  }
+];
+
+export type PostType = {
+  slug: string;
+  frontmatter: {
+    title: string;
+    date: string;
+    coverImage: string;
+    excerpt: string;
+  };
+  content?: string;
+};
+
+export default function Post({ post }: { post: PostType }) {
   return (
     <div className="flex mt-20">
       <div className="w-2/3 h-44">
