@@ -13,6 +13,7 @@ import ExplanationBox, { List } from "../components/ExplanationBox";
 import Post, { PostType, PostsType } from "../components/Post";
 import TopPageHeader from "../components/TopPageHeader";
 import Footer from "../components/Footer";
+import { sortByDate } from "../../utils/index";
 
 export function Keyvisual() {
   return (
@@ -215,20 +216,6 @@ export function ActivityHistory({ posts }: { posts: PostsType }) {
       {posts.map((post: PostType) => (
         <Post key={post.slug} post={post} />
       ))}
-      <div className="flex mt-20">
-        <div className="bg-gray-300 w-2/3 h-44" />
-        <div className="ml-14">
-          <div>2022年1月2日</div>
-          <h3 className="text-xl font-extrabold mb-5">吾輩は猫である</h3>
-          <div className="tracking-wider leading-relaxed">
-            あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森
-            で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-            またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼
-            のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパ
-            ーゴなど、
-          </div>
-        </div>
-      </div>
       <div className="flex">
         <a
           href="/"
@@ -271,7 +258,7 @@ export async function getStaticProps() {
   });
   return {
     props: {
-      posts,
+      posts: posts.sort(sortByDate).slice(0, 3),
     },
   };
 }

@@ -1,3 +1,4 @@
+import ReactPaginate from "react-paginate";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -7,6 +8,9 @@ import blogImage from "../../public/images/posts/blog.jpg";
 import ContentContainer from "../components/ContentContainer";
 import Post, { PostsType, PostType } from "../components/Post";
 import Footer from "../components/Footer";
+import { sortByDate } from "../../utils";
+
+let n = 0;
 
 export default function Blog({ posts }: { posts: PostsType }) {
   return (
@@ -39,7 +43,7 @@ export default function Blog({ posts }: { posts: PostsType }) {
         </div>
       </ContentContainer>
       <ContentContainer className="mb-20">
-        {posts.map((post: PostType) => (
+        {posts.slice(n * 10, 10).map((post: PostType) => (
           <Post key={post.slug} post={post} />
         ))}
       </ContentContainer>
@@ -65,7 +69,7 @@ export async function getStaticProps() {
   });
   return {
     props: {
-      posts,
+      posts: posts.sort(sortByDate),
     },
   };
 }
