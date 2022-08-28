@@ -24,7 +24,7 @@ export type PostType = {
 export default function Post({ post }: { post: PostType }) {
   return (
     <div className="flex mt-20">
-      <div className="w-2/3 h-44">
+      <div className="w-54 h-44">
         <img
           src={post.frontmatter.coverImage}
           alt=""
