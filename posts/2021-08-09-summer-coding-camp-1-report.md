@@ -3,7 +3,7 @@ title: "Summer Coding Camp 第1回を開催しました"
 date: "2021-08-09"
 categories: 
   - "events"
-coverImage: "images/posts/summer-coding-camp-1-report-photo-scaled.jpg"
+coverImage: "/images/posts/summer-coding-camp-1-report-photo-scaled.jpg"
 ---
 
 8/6 13:00 〜 8/6 17:00に、[KOMAD](https://komad.tokyo/)にて[Summer Coding Camp](/2021/events/2021-summer-coding-camp/)を開催しました。

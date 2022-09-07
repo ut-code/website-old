@@ -13,7 +13,7 @@ import ExplanationBox, { List } from "../components/ExplanationBox";
 import Post, { PostType, PostsType } from "../components/Post";
 import TopPageHeader from "../components/TopPageHeader";
 import Footer from "../components/Footer";
-import { sortByDate } from "../../utils/index";
+import sortByDate from "../../utils/index";
 
 export function Keyvisual() {
   return (
@@ -218,7 +218,7 @@ export function ActivityHistory({ posts }: { posts: PostsType }) {
       ))}
       <div className="flex">
         <a
-          href="/"
+          href="/blog"
           className="text-green-400 tracking-widest text-xl font-extrabold ml-auto my-14 hover:brightness-110"
         >
           もっと見る

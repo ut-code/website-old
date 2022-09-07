@@ -3,7 +3,7 @@ title: "「エンジニアになろう」講習会初回講義を実施しまし
 date: "2019-10-03"
 categories: 
   - "info"
-coverImage: "images/posts/DSC_1417.jpg"
+coverImage: "/images/posts/DSC_1417.jpg"
 ---
 
 10/3 (水) 6限、本セメスターの最初の活動として、[「エンジニアになろう」講習会](https://utcode.net/2019/info/2019a-schedule/)第一回を実施しました。

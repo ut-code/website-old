@@ -3,7 +3,7 @@ title: "2022年度新歓体験会を実施しました"
 date: "2022-04-19"
 categories: 
   - "events"
-coverImage: "images/posts/2022_welcome_event-scaled.jpg"
+coverImage: "/images/posts/2022_welcome_event-scaled.jpg"
 ---
 
 4/10(日), 4/17(日), 4/23 (土)に、[渋谷IVYイーストビル](https://www.accea.co.jp/cr/tokyo/shibuya/shibuya01.php)にて2022年度新歓体験会を実施しました。

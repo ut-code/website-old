@@ -3,7 +3,7 @@ title: "第94回五月祭は5月開催を断念しました"
 date: "2021-05-07"
 categories: 
   - "utokyo"
-coverImage: "images/posts/mf94-banner.jpg"
+coverImage: "/images/posts/mf94-banner.jpg"
 ---
 
 第94回五月祭は、大学側からの要請により、当初の日程での開催の断念を余儀なくされました。

@@ -3,7 +3,7 @@ title: "2022年度の新歓活動にご協力いただける方を募集して�
 date: "2022-02-14"
 categories: 
   - "info"
-coverImage: "images/posts/welcome-event-recruiting.png"
+coverImage: "/images/posts/welcome-event-recruiting.png"
 ---
 
 2019年の ut.code(); の発足から、3年の月日が経とうとしています。コロナ禍もついに終息の兆しが見え、来年度からは対面での新歓活動の再開が見込まれています。ut.code(); の掲げる「東京大学のソフトウェアエンジニアリングコミュニティとして、学生に学びと発信の機会を提供する」という理念の実現のため、この機会を逃すわけにはまいりません。

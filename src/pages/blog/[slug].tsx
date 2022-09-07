@@ -6,6 +6,7 @@ import NormalHeader from "../../components/NormalHeader";
 import ContentContainer from "../../components/ContentContainer";
 import TinyPost from "../../components/TinyPost";
 import Footer from "../../components/Footer";
+import sortByDate from "../../../utils/index";
 
 type TinyPostType = {
   slug2: string;
@@ -59,7 +60,7 @@ export default function PostPage({
             <h1 className="text-5xl">{title}</h1>
             <img src={coverImage} alt="" className="w-full" />
             <div
-              className="text-xl mt-10"
+              className="text-xl mt-10 prose"
               dangerouslySetInnerHTML={{ __html: marked(content) }}
             />
           </article>
@@ -117,7 +118,7 @@ export async function getStaticProps({
       frontmatter,
       slug,
       content,
-      posts,
+      posts: posts.sort(sortByDate).slice(0, 10),
     },
   };
 }

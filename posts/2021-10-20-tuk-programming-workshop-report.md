@@ -3,7 +3,7 @@ title: "丁友会と合同でプログラミング教室を開催しました"
 date: "2021-10-20"
 categories: 
   - "events"
-coverImage: "images/posts/cover.png"
+coverImage: "/images/posts/cover.png"
 ---
 
 ut.code(); は、2021年10月16日 (土)に、[東京大学工学部丁友会](https://tuk.t.u-tokyo.ac.jp/)と合同でプログラミング教室を開催しました。東京大学の学部生・大学院生を対象に、HTMLと若干のCSS、JavaScriptの基礎を学んでいただいた上で、シンプルなウェブアプリケーションをつくってもらうことを目標に設定しました。

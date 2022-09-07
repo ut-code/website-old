@@ -4,7 +4,7 @@ date: "2022-04-25"
 categories: 
   - "events"
   - "info"
-coverImage: "images/posts/mf95-banner-1024x576-1.jpg"
+coverImage: "/images/posts/mf95-banner-1024x576-1.jpg"
 ---
 
 ut.code();は、第95回五月祭に「[はじめてのプログラミング教室](http://gogatsusai.jp/95/visitor/campus/kikaku/325)」を出展いたします。

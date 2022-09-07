@@ -1,18 +1,17 @@
-import ReactPaginate from "react-paginate";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Image from "next/image";
+import { useState } from "react";
 import NormalHeader from "../components/NormalHeader";
 import blogImage from "../../public/images/posts/blog.jpg";
 import ContentContainer from "../components/ContentContainer";
 import Post, { PostsType, PostType } from "../components/Post";
 import Footer from "../components/Footer";
-import { sortByDate } from "../../utils";
-
-let n = 0;
+import sortByDate from "../../utils";
 
 export default function Blog({ posts }: { posts: PostsType }) {
+  const [pageNumber, setPageNumber] = useState<number>(1);
   return (
     <>
       <ContentContainer>
@@ -43,9 +42,33 @@ export default function Blog({ posts }: { posts: PostsType }) {
         </div>
       </ContentContainer>
       <ContentContainer className="mb-20">
-        {posts.slice(n * 10, 10).map((post: PostType) => (
-          <Post key={post.slug} post={post} />
-        ))}
+        {posts
+          .slice((pageNumber - 1) * 10, pageNumber * 10)
+          .map((post: PostType) => (
+            <Post key={post.slug} post={post} />
+          ))}
+        <div className="flex">
+          <button
+            type="button"
+            onClick={() => {
+              setPageNumber(pageNumber - 1);
+              window.scroll(0, 530);
+            }}
+            className="text-green-400 tracking-widest text-xl font-extrabold mt-10 ml-auto mr-1 hover:brightness-110"
+          >
+            前のページ
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setPageNumber(pageNumber + 1);
+              window.scroll(0, 530);
+            }}
+            className="text-green-400 tracking-widest text-xl font-extrabold mr-auto ml-1 mt-10 hover:brightness-110"
+          >
+            次のページ
+          </button>
+        </div>
       </ContentContainer>
       <Footer />
     </>
