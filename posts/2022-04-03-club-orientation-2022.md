@@ -3,7 +3,7 @@ title: "2022年度サークルオリエンテーションに参加していま�
 date: "2022-04-03"
 categories: 
   - "events"
-coverImage: "images/posts/club-orientation-2022.png"
+coverImage: "/images/posts/club-orientation-2022.png"
 ---
 
 ut.code(); は、4月3日から4月4日にかけて行われるサークルオリエンテーションに参加しています。会場（1313教室）ではWeb技術を使った簡単なゲームをお楽しみいただけます。

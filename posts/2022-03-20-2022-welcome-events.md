@@ -3,7 +3,7 @@ title: "2022年度新歓日程"
 date: "2022-03-20"
 categories: 
   - "info"
-coverImage: "images/posts/2022-welcome-events.png.png"
+coverImage: "/images/posts/2022-welcome-events.png.png"
 ---
 
 ut.code();では、2022年度の新歓活動を以下の通り実施いたします。

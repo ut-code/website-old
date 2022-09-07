@@ -3,7 +3,7 @@ title: "UTmap Timesを制作しています"
 date: "2021-03-14"
 categories: 
   - "info"
-coverImage: "images/posts/utmap-times.png"
+coverImage: "/images/posts/utmap-times.png"
 ---
 
 現在、ut.code();では、[UTmap Times](https://utmap.jp/)の制作に取り組んでいます。

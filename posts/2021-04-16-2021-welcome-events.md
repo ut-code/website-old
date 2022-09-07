@@ -3,7 +3,7 @@ title: "2021年度新歓日程"
 date: "2021-04-16"
 categories: 
   - "info"
-coverImage: "images/posts/2021-welcome-events.png"
+coverImage: "/images/posts/2021-welcome-events.png"
 ---
 
 ut.code();では、本年度の新歓活動を以下の通り実施いたします。

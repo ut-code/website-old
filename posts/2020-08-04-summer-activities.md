@@ -3,7 +3,7 @@ title: "夏季休業期間中の活動日程"
 date: "2020-08-04"
 categories: 
   - "info"
-coverImage: "images/posts/summer-schedules-2020.png"
+coverImage: "/images/posts/summer-schedules-2020.png"
 ---
 
 夏季休業期間中は、以下の日程で活動します。

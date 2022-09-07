@@ -3,7 +3,7 @@ title: "【中止】新歓イベント「コードで、未来を描け」"
 date: "2021-05-24"
 categories: 
   - "events"
-coverImage: "images/posts/draw-your-future-with-code.png"
+coverImage: "/images/posts/draw-your-future-with-code.png"
 ---
 
 ## イベント中止のお知らせ

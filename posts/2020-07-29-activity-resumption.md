@@ -3,7 +3,7 @@ title: "夏季休業期間中の活動のお知らせ"
 date: "2020-07-29"
 categories: 
   - "info"
-coverImage: "images/posts/activity-resumption.jpg"
+coverImage: "/images/posts/activity-resumption.jpg"
 ---
 
 ut.code();では、新型コロナウイルスの感染拡大の影響を受け、活動を自粛しておりましたが、7月15日付で東京大学から発表された「[学生の皆さんへ　理事・副学長メッセージ](https://www.u-tokyo.ac.jp/ja/general/COVID-19-message-20200715.html)」を受け、夏休みの活動を再開することといたしました。活動は感染予防に十分配慮したうえで実施しますが、当面の間オンライン通話も併用する予定です。
