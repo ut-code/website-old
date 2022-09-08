@@ -20,7 +20,7 @@ export default function TopPageHeader() {
             <a href="/our-mission">活動理念</a>
           </li>
           <li className="mx-8">
-            <AnchorButton variant="medium" href="/">
+            <AnchorButton variant="medium" href="/contact">
               お問い合わせ
             </AnchorButton>
           </li>

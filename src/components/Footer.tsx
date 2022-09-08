@@ -10,7 +10,7 @@ export default function Footer() {
         </a>
         <div className="text-white mt-4 text-lg">東京大学工学部傘下</div>
         <div className="text-white">学生会館2階 313号室</div>
-        <AnchorButton variant="small" href="/" className="my-10">
+        <AnchorButton variant="small" href="/contact" className="my-10">
           問い合わせ
         </AnchorButton>
       </div>

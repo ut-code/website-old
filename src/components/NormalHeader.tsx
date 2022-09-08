@@ -19,7 +19,7 @@ export default function NormalHeader() {
             <a href="/our-mission">活動理念</a>
           </li>
           <li className="mx-8">
-            <a href="/">お問い合わせ</a>
+            <a href="/contact">お問い合わせ</a>
           </li>
         </ul>
       </nav>

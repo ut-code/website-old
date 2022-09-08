@@ -60,7 +60,7 @@ export default function PostPage({
             <h1 className="text-5xl">{title}</h1>
             <img src={coverImage} alt="" className="w-full" />
             <div
-              className="text-xl mt-10 prose"
+              className="text-xl mt-10 prose max-w-none"
               dangerouslySetInnerHTML={{ __html: marked(content) }}
             />
           </article>
