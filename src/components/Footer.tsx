@@ -16,12 +16,24 @@ export default function Footer() {
       </div>
       <div className="ml-56">
         <ul className="text-white text-lg flex flex-wrap">
-          <li className="w-64 mb-4">リンク</li>
-          <li className="w-64 mb-4">リンク</li>
-          <li className="w-64 mb-4">リンク</li>
-          <li className="w-64 mb-4">リンク</li>
-          <li className="w-64 mb-4">リンク</li>
-          <li className="w-64 mb-4">リンク</li>
+          <li className="w-64 mb-4">
+            LINE{" "}
+            <a
+              href="https://line.me/ti/p/%40nlr3843e"
+              className="hover:text-green-100"
+            >
+              @nlr3843e
+            </a>
+          </li>
+          <li className="w-64 mb-4">
+            Twitter{" "}
+            <a
+              href="https://line.me/ti/p/%40nlr3843e"
+              className="hover:text-green-100"
+            >
+              @utokyo_code
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
