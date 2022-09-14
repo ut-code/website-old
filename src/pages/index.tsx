@@ -14,6 +14,7 @@ import Post, { PostType, PostsType } from "../components/Post";
 import TopPageHeader from "../components/TopPageHeader";
 import Footer from "../components/Footer";
 import sortByDate from "../../utils/index";
+import Event from "../components/Event";
 
 export function Keyvisual() {
   return (
@@ -130,78 +131,65 @@ export function BlueBar() {
 }
 
 export function Schedule() {
+  const events = [
+    {
+      date: "4月 下旬",
+      name: "新歓体験会",
+      content:
+        "春の新歓体験会で、HTMLやJavaScriptの使い方など、web開発の基礎となる技術について学ぶ講座を開きます。また、実際に小規模のフロントエンドアプリを作成し、技術の定着を図ります。",
+    },
+    {
+      date: "5月 初旬",
+      name: "ゴールデンウィークイベント",
+      content:
+        "ゴールデンウィーク期間に、２日間かけてフロントエンド開発とバックエンド開発の基礎を学びます。サーバーの構築方法からデプロイの方法まで、実際の開発現場で使われる技術を習得します。",
+    },
+    {
+      date: "5月 中旬",
+      name: "五月祭",
+      content:
+        "東京大学の学園祭の1つ、五月祭に出展します。企画チームごとに作成したものや企画したものを用いて、web開発技術の魅力や技法を伝えます。大規模な学園祭であり、企画グランプリでの入賞を狙い、冬ごろから3か月ほどかけて作品を練り上げます。",
+    },
+    {
+      date: "6月 中旬",
+      name: "ハッカソン",
+      content:
+        "2日間でグループに分かれて集中的に開発を行い、グループごとに1つのプロダクトを完成させます。実際の作業を通して、実践的なweb開発技術を身につけます。",
+    },
+    {
+      date: "8月 中旬",
+      name: "夏新歓",
+      content:
+        "4月から6月にかけて行った学習カリキュラムや講座をを夏でもう一度行います。春に新歓に参加できなかった人や、もう一度復習がしたいという人向けにキャッチアップを行います。",
+    },
+    {
+      date: "11月 下旬",
+      name: "駒場祭",
+      content:
+        "東京大学の学園祭の1つ、駒場祭に出展します。企画チームごとに作成したものや企画したものを用いて、web開発技術の魅力や技法を伝えます。1年と2年が主体となる学園祭であり、企画準備を通してさらなる技術の向上に努めます。",
+    },
+  ];
   return (
     <div>
       <div className="text-5xl font-extrabold tracking-widest text-center mt-28">
         <span className="text-green-400">年間</span>カレンダー
       </div>
-      <ul className="mt-10">
-        <li>
-          <div className="border-l-2 border-dotted ml-48 pb-20">
-            <div className="flex items-center">
-              <div className="bg-green-400 -translate-x-32 text-white p-2 font-extrabold text-lg tracking-wide">
-                4/10
-              </div>
-              <div className="bg-green-400 -translate-x-32 text-white p-2 font-extrabold text-lg tracking-wide">
-                SUN
-              </div>
-              <div className="bg-white rounded-full border-solid border-green-500 absolute border-2 w-6 h-6 -translate-x-1/2" />
-              <div className="w-3 bg-green-500 absolute rounded-full h-3 -translate-x-1/2" />
-              <div className="text-4xl">新歓</div>
-            </div>
-            <div className="ml-8 mx-28">
-              あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森
-              で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-              またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼
-              のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパ
-              ーゴなど、
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="border-l-2 border-dotted ml-48 pb-20">
-            <div className="flex items-center">
-              <div className="bg-green-400 -translate-x-32 text-white p-2 font-extrabold text-lg tracking-wide">
-                4/10
-              </div>
-              <div className="bg-green-400 -translate-x-32 text-white p-2 font-extrabold text-lg tracking-wide">
-                SUN
-              </div>
-              <div className="bg-white rounded-full border-solid border-green-500 absolute border-2 w-6 h-6 -translate-x-1/2" />
-              <div className="w-3 bg-green-500 absolute rounded-full h-3 -translate-x-1/2" />
-              <div className="text-4xl">新歓</div>
-            </div>
-            <div className="ml-8 mx-28">
-              あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森
-              で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-              またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼
-              のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパ
-              ーゴなど、
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="border-l-2 border-dotted ml-48 pb-20">
-            <div className="flex items-center">
-              <div className="bg-green-400 -translate-x-32 text-white p-2 font-extrabold text-lg tracking-wide">
-                4/10
-              </div>
-              <div className="bg-green-400 -translate-x-32 text-white p-2 font-extrabold text-lg tracking-wide">
-                SUN
-              </div>
-              <div className="bg-white rounded-full border-solid border-green-500 absolute border-2 w-6 h-6 -translate-x-1/2" />
-              <div className="w-3 bg-green-500 absolute rounded-full h-3 -translate-x-1/2" />
-              <div className="text-4xl">新歓</div>
-            </div>
-            <div className="ml-8 mx-28">
-              あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森
-              で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-              またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼
-              のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパ
-              ーゴなど、
-            </div>
-          </div>
-        </li>
+      <div className="tracking-widest leading-loose text-center my-5">
+        <div>ut.code()での主なイベントの日程です。</div>
+        <div>
+          個々のイベントや常時稼働しているプロジェクトの詳細はSNSやウェブサイトのお知らせでご確認ください。
+        </div>
+      </div>
+      <ul className="my-10">
+        {events.map((event) => (
+          <li>
+            <Event
+              date={event.date}
+              name={event.name}
+              content={event.content}
+            />
+          </li>
+        ))}
       </ul>
     </div>
   );
