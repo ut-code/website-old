@@ -82,7 +82,7 @@ export function AboutCircle() {
       </div>
       {[
         {
-          title: "①　開発",
+          title: "①　教育",
           text: "私たちはコミュニティのメンバーがプログラミングの技術の習得を行えるような活動を行います。例えば各プログラミング言語やソフトウェア技術に関する講習会を開き、プログラミングに関する技術を教えます。また、コミュニティのメンバーが学習を進める上で、指針となりうるような教材の作成を行います。さらに、ハッカソンを通じて実践的な開発技術の習得を目指します。",
           src: homeGoalLearningImage,
         },
@@ -117,7 +117,7 @@ export function BlueBar() {
           <p>始めてみませんか？</p>
         </div>
         <p className="tracking-widest font-light text-lg">
-          初心者の方も上級者の方も歓迎します
+          初心者の方も上級者の方も歓迎します！
         </p>
       </div>
       <div className="ml-auto mr-44 ">
